@@ -1,0 +1,531 @@
+{
+  "contractName": "KeeperCompatibleInterface",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "checkData",
+          "type": "bytes"
+        }
+      ],
+      "name": "checkUpkeep",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "upkeepNeeded",
+          "type": "bool"
+        },
+        {
+          "internalType": "bytes",
+          "name": "performData",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "performData",
+          "type": "bytes"
+        }
+      ],
+      "name": "performUpkeep",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.3+commit.8d00100c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"checkData\",\"type\":\"bytes\"}],\"name\":\"checkUpkeep\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"upkeepNeeded\",\"type\":\"bool\"},{\"internalType\":\"bytes\",\"name\":\"performData\",\"type\":\"bytes\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"performData\",\"type\":\"bytes\"}],\"name\":\"performUpkeep\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"checkUpkeep(bytes)\":{\"params\":{\"checkData\":\"data passed to the contract when checking for upkeep.\"},\"returns\":{\"performData\":\"bytes that the keeper should call performUpkeep with, if upkeep is needed.\",\"upkeepNeeded\":\"boolean to indicate whether the keeper should call performUpkeep or not.\"}},\"performUpkeep(bytes)\":{\"params\":{\"performData\":\"is the data which was passed back from the checkData simulation.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"checkUpkeep(bytes)\":{\"notice\":\"checks if the contract requires work to be done.\"},\"performUpkeep(bytes)\":{\"notice\":\"Performs work on the contract. Executed by the keepers, via the registry.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/v0.8/interfaces/KeeperCompatibleInterface.sol\":\"KeeperCompatibleInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1500},\"remappings\":[]},\"sources\":{\"project:/contracts/v0.8/interfaces/KeeperCompatibleInterface.sol\":{\"keccak256\":\"0xd2d73117e394024c56c712e4b73fc91b5d4ae2ede33752d237df4d0361851feb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fc6c9da5c956fbe717f8933d8611dfe7ea289329e77ab66fab6c00f426741357\",\"dweb:/ipfs/QmUmcKmaSGqbR5R5fYr47T363c8zTpg7X42Q72u42vJohB\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ninterface KeeperCompatibleInterface {\n\n  /**\n   * @notice checks if the contract requires work to be done.\n   * @param checkData data passed to the contract when checking for upkeep.\n   * @return upkeepNeeded boolean to indicate whether the keeper should call\n   * performUpkeep or not.\n   * @return performData bytes that the keeper should call performUpkeep with,\n   * if upkeep is needed.\n   */\n  function checkUpkeep(\n    bytes calldata checkData\n  )\n    external\n    returns (\n      bool upkeepNeeded,\n      bytes memory performData\n    );\n\n  /**\n   * @notice Performs work on the contract. Executed by the keepers, via the registry.\n   * @param performData is the data which was passed back from the checkData\n   * simulation.\n   */\n  function performUpkeep(\n    bytes calldata performData\n  ) external;\n}\n",
+  "sourcePath": "/home/rol/Desktop/spadeQ-lott/spadeq/contracts/v0.8/interfaces/KeeperCompatibleInterface.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/v0.8/interfaces/KeeperCompatibleInterface.sol",
+    "exportedSymbols": {
+      "KeeperCompatibleInterface": [
+        7671
+      ]
+    },
+    "id": 7672,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7654,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:30"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 7671,
+        "linearizedBaseContracts": [
+          7671
+        ],
+        "name": "KeeperCompatibleInterface",
+        "nameLocation": "67:25:30",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 7655,
+              "nodeType": "StructuredDocumentation",
+              "src": "98:356:30",
+              "text": " @notice checks if the contract requires work to be done.\n @param checkData data passed to the contract when checking for upkeep.\n @return upkeepNeeded boolean to indicate whether the keeper should call\n performUpkeep or not.\n @return performData bytes that the keeper should call performUpkeep with,\n if upkeep is needed."
+            },
+            "functionSelector": "6e04ff0d",
+            "id": 7664,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkUpkeep",
+            "nameLocation": "466:11:30",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7658,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7657,
+                  "mutability": "mutable",
+                  "name": "checkData",
+                  "nameLocation": "498:9:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7664,
+                  "src": "483:24:30",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 7656,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "483:5:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "477:34:30"
+            },
+            "returnParameters": {
+              "id": 7663,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7660,
+                  "mutability": "mutable",
+                  "name": "upkeepNeeded",
+                  "nameLocation": "550:12:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7664,
+                  "src": "545:17:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 7659,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "545:4:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7662,
+                  "mutability": "mutable",
+                  "name": "performData",
+                  "nameLocation": "583:11:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7664,
+                  "src": "570:24:30",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 7661,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "570:5:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "537:63:30"
+            },
+            "scope": 7671,
+            "src": "457:144:30",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 7665,
+              "nodeType": "StructuredDocumentation",
+              "src": "605:190:30",
+              "text": " @notice Performs work on the contract. Executed by the keepers, via the registry.\n @param performData is the data which was passed back from the checkData\n simulation."
+            },
+            "functionSelector": "4585e33b",
+            "id": 7670,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "performUpkeep",
+            "nameLocation": "807:13:30",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7668,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7667,
+                  "mutability": "mutable",
+                  "name": "performData",
+                  "nameLocation": "841:11:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7670,
+                  "src": "826:26:30",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 7666,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "826:5:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "820:36:30"
+            },
+            "returnParameters": {
+              "id": 7669,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "865:0:30"
+            },
+            "scope": 7671,
+            "src": "798:68:30",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 7672,
+        "src": "57:811:30"
+      }
+    ],
+    "src": "32:837:30"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/v0.8/interfaces/KeeperCompatibleInterface.sol",
+    "exportedSymbols": {
+      "KeeperCompatibleInterface": [
+        7671
+      ]
+    },
+    "id": 7672,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7654,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:30"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 7671,
+        "linearizedBaseContracts": [
+          7671
+        ],
+        "name": "KeeperCompatibleInterface",
+        "nameLocation": "67:25:30",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 7655,
+              "nodeType": "StructuredDocumentation",
+              "src": "98:356:30",
+              "text": " @notice checks if the contract requires work to be done.\n @param checkData data passed to the contract when checking for upkeep.\n @return upkeepNeeded boolean to indicate whether the keeper should call\n performUpkeep or not.\n @return performData bytes that the keeper should call performUpkeep with,\n if upkeep is needed."
+            },
+            "functionSelector": "6e04ff0d",
+            "id": 7664,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkUpkeep",
+            "nameLocation": "466:11:30",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7658,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7657,
+                  "mutability": "mutable",
+                  "name": "checkData",
+                  "nameLocation": "498:9:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7664,
+                  "src": "483:24:30",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 7656,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "483:5:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "477:34:30"
+            },
+            "returnParameters": {
+              "id": 7663,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7660,
+                  "mutability": "mutable",
+                  "name": "upkeepNeeded",
+                  "nameLocation": "550:12:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7664,
+                  "src": "545:17:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 7659,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "545:4:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7662,
+                  "mutability": "mutable",
+                  "name": "performData",
+                  "nameLocation": "583:11:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7664,
+                  "src": "570:24:30",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 7661,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "570:5:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "537:63:30"
+            },
+            "scope": 7671,
+            "src": "457:144:30",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 7665,
+              "nodeType": "StructuredDocumentation",
+              "src": "605:190:30",
+              "text": " @notice Performs work on the contract. Executed by the keepers, via the registry.\n @param performData is the data which was passed back from the checkData\n simulation."
+            },
+            "functionSelector": "4585e33b",
+            "id": 7670,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "performUpkeep",
+            "nameLocation": "807:13:30",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7668,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7667,
+                  "mutability": "mutable",
+                  "name": "performData",
+                  "nameLocation": "841:11:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7670,
+                  "src": "826:26:30",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 7666,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "826:5:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "820:36:30"
+            },
+            "returnParameters": {
+              "id": 7669,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "865:0:30"
+            },
+            "scope": 7671,
+            "src": "798:68:30",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 7672,
+        "src": "57:811:30"
+      }
+    ],
+    "src": "32:837:30"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.3+commit.8d00100c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-09-09T15:04:27.017Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "checkUpkeep(bytes)": {
+        "params": {
+          "checkData": "data passed to the contract when checking for upkeep."
+        },
+        "returns": {
+          "performData": "bytes that the keeper should call performUpkeep with, if upkeep is needed.",
+          "upkeepNeeded": "boolean to indicate whether the keeper should call performUpkeep or not."
+        }
+      },
+      "performUpkeep(bytes)": {
+        "params": {
+          "performData": "is the data which was passed back from the checkData simulation."
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "checkUpkeep(bytes)": {
+        "notice": "checks if the contract requires work to be done."
+      },
+      "performUpkeep(bytes)": {
+        "notice": "Performs work on the contract. Executed by the keepers, via the registry."
+      }
+    },
+    "version": 1
+  }
+}

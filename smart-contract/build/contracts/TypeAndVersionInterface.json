@@ -1,0 +1,241 @@
+{
+  "contractName": "TypeAndVersionInterface",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "typeAndVersion",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.3+commit.8d00100c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"typeAndVersion\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/v0.8/interfaces/TypeAndVersionInterface.sol\":\"TypeAndVersionInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1500},\"remappings\":[]},\"sources\":{\"project:/contracts/v0.8/interfaces/TypeAndVersionInterface.sol\":{\"keccak256\":\"0x2d38573c1f429e55419244988a093d3295bb7bfbd79a309557df485f0755b63b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://28c31f05c97ad18dcb388c63a9236165f24dbd4cafb0449c89854d0fe2302090\",\"dweb:/ipfs/QmZeb2kDzGnznEzWwYXrEkypNUJuU6AoXsWQ94mPCd8Yvr\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nabstract contract TypeAndVersionInterface{\n  function typeAndVersion()\n    external\n    pure\n    virtual\n    returns (\n      string memory\n    );\n}",
+  "sourcePath": "/home/rol/Desktop/spadeQ-lott/spadeq/contracts/v0.8/interfaces/TypeAndVersionInterface.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/v0.8/interfaces/TypeAndVersionInterface.sol",
+    "exportedSymbols": {
+      "TypeAndVersionInterface": [
+        7919
+      ]
+    },
+    "id": 7920,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7913,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:36"
+      },
+      {
+        "abstract": true,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": false,
+        "id": 7919,
+        "linearizedBaseContracts": [
+          7919
+        ],
+        "name": "TypeAndVersionInterface",
+        "nameLocation": "75:23:36",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "181f5a77",
+            "id": 7918,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "typeAndVersion",
+            "nameLocation": "111:14:36",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7914,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "125:2:36"
+            },
+            "returnParameters": {
+              "id": 7917,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7916,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7918,
+                  "src": "182:13:36",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 7915,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "182:6:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "174:27:36"
+            },
+            "scope": 7919,
+            "src": "102:100:36",
+            "stateMutability": "pure",
+            "virtual": true,
+            "visibility": "external"
+          }
+        ],
+        "scope": 7920,
+        "src": "57:147:36"
+      }
+    ],
+    "src": "32:172:36"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/v0.8/interfaces/TypeAndVersionInterface.sol",
+    "exportedSymbols": {
+      "TypeAndVersionInterface": [
+        7919
+      ]
+    },
+    "id": 7920,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7913,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:36"
+      },
+      {
+        "abstract": true,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": false,
+        "id": 7919,
+        "linearizedBaseContracts": [
+          7919
+        ],
+        "name": "TypeAndVersionInterface",
+        "nameLocation": "75:23:36",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "181f5a77",
+            "id": 7918,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "typeAndVersion",
+            "nameLocation": "111:14:36",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7914,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "125:2:36"
+            },
+            "returnParameters": {
+              "id": 7917,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7916,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7918,
+                  "src": "182:13:36",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 7915,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "182:6:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "174:27:36"
+            },
+            "scope": 7919,
+            "src": "102:100:36",
+            "stateMutability": "pure",
+            "virtual": true,
+            "visibility": "external"
+          }
+        ],
+        "scope": 7920,
+        "src": "57:147:36"
+      }
+    ],
+    "src": "32:172:36"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.3+commit.8d00100c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-09-09T15:04:27.021Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

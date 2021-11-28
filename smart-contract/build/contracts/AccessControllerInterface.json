@@ -1,0 +1,364 @@
+{
+  "contractName": "AccessControllerInterface",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "hasAccess",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.3+commit.8d00100c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"hasAccess\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/v0.8/interfaces/AccessControllerInterface.sol\":\"AccessControllerInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1500},\"remappings\":[]},\"sources\":{\"project:/contracts/v0.8/interfaces/AccessControllerInterface.sol\":{\"keccak256\":\"0x08aba11f50508cbaf9d6690decea5e8ca7b1874e2709bda60e4c5f98d52a00bf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9b7735e657c13fcdcaea54a2e66f7dbe32ecb09056f98b36a8727eddd045c49a\",\"dweb:/ipfs/QmYNakxBHmX4164V7WcTF1uRq3t9PQ7UJ74UmuhSYjiS2Z\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ninterface AccessControllerInterface {\n  function hasAccess(address user, bytes calldata data) external view returns (bool);\n}\n",
+  "sourcePath": "/home/rol/Desktop/spadeQ-lott/spadeq/contracts/v0.8/interfaces/AccessControllerInterface.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/v0.8/interfaces/AccessControllerInterface.sol",
+    "exportedSymbols": {
+      "AccessControllerInterface": [
+        7068
+      ]
+    },
+    "id": 7069,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7058,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:21"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 7068,
+        "linearizedBaseContracts": [
+          7068
+        ],
+        "name": "AccessControllerInterface",
+        "nameLocation": "67:25:21",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "6b14daf8",
+            "id": 7067,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "hasAccess",
+            "nameLocation": "106:9:21",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7063,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7060,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nameLocation": "124:4:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7067,
+                  "src": "116:12:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7059,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "116:7:21",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7062,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "145:4:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7067,
+                  "src": "130:19:21",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 7061,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "130:5:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "115:35:21"
+            },
+            "returnParameters": {
+              "id": 7066,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7065,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7067,
+                  "src": "174:4:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 7064,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "174:4:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "173:6:21"
+            },
+            "scope": 7068,
+            "src": "97:83:21",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 7069,
+        "src": "57:125:21"
+      }
+    ],
+    "src": "32:151:21"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/v0.8/interfaces/AccessControllerInterface.sol",
+    "exportedSymbols": {
+      "AccessControllerInterface": [
+        7068
+      ]
+    },
+    "id": 7069,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7058,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:21"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 7068,
+        "linearizedBaseContracts": [
+          7068
+        ],
+        "name": "AccessControllerInterface",
+        "nameLocation": "67:25:21",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "6b14daf8",
+            "id": 7067,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "hasAccess",
+            "nameLocation": "106:9:21",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7063,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7060,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nameLocation": "124:4:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7067,
+                  "src": "116:12:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7059,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "116:7:21",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7062,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "145:4:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7067,
+                  "src": "130:19:21",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 7061,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "130:5:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "115:35:21"
+            },
+            "returnParameters": {
+              "id": 7066,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7065,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7067,
+                  "src": "174:4:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 7064,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "174:4:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "173:6:21"
+            },
+            "scope": 7068,
+            "src": "97:83:21",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 7069,
+        "src": "57:125:21"
+      }
+    ],
+    "src": "32:151:21"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.3+commit.8d00100c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-09-09T15:04:27.011Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
